@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hi :)</title>
+</head>
+
+<body>
+    <h1>Blossom</h1>
+    <p>Blossom is a game where you play as a small flower person and seing through levels, collecting "dawndrops" to 
+        revive a sacred flower.</p>
+
+    <h2>My Role</h2>
+    <ul>
+        <li>Programming the movement of the character while grappling.</li>
+        <li>Developing the visualization of the grappling rope.</li>
+        <li>Composing and recording the music.</li>
+        <li>Creating particle effects for floating, grappling, and landing. </li>
+        <li>Scripting back-and-forth movement of bugs.</li>
+    </ul>
+
+    <h2>Challenges</h2>
+    <p>One challenge came with figuring out how to program the grappling. I couldn't find any built-in ways to attach
+        two actors dynamically so I used vectors and math to create teh swinging effect, which took some time. The final
+        math looked like this and is called every frame.</p>
+    <pre>
+    <code>
+    if(isGrappling) {
+        FVector PlayerPos = GetActorLocation();
+        FVector GrapplePoint = CurrentlyGrappled->GetActorLocation();
+        FVector dif = PlayerPos-GrapplePoint;
+        float dist = dif.Size();
+        float dot = vel.DotProduct(vel,dif);
+        dif.Normalize();
+
+        // If we are on a bug and go past max range, snap us back into place
+        if(dist> 600) {
+            FVector newLoc = GrapplePoint +(dif * 600);
+            SetActorLocation(newLoc);
+        }
+        dif = dif * dot * -2;
+        GetCharacterMovement()->AddForce(dif);
+    }
+    </code>
+    </pre>
+    <p>Another thing that took a while was fixing the grappling rope. It was easy to attach to points, but I 
+        ran into trouble trying to detach it, as it would either not detach or attach to different things. It took
+        a very long time to fix that bug. It turned out that there was an initial setting I had set, EnableCollisions, 
+        which was causing the error. Disabling this fixed the issue. Here is the final initialization of the Cable.</p>
+    <pre>
+    <code>
+    // Create a cable component to act as the grappling rope
+	Cable = CreateDefaultSubobject&ltUCableComponent&gt(TEXT("Cable"));
+	Cable->EndLocation = FVector(0,0,0);
+	Cable->NumSegments = 20;
+	Cable->SolverIterations = 16;
+	Cable->SubstepTime = 0.005;
+	Cable->bEnableStiffness = true;
+	// Cable->bEnableCollision = true;
+	Cable->CollisionFriction = 1.0;
+	Cable->CableGravityScale = 1.2;
+	Cable->CableWidth = 3;
+	Cable->NumSides = 10;
+	Cable->CableLength = 1.f;
+    </code>
+    </pre>
+
+    <h2>Architecture</h2>
+    <p>Here is a diagram of the two most important classes for grappling. The game mode manages a list of grapple points
+        and can give them to the BlossomCharacter. The character will populate the "CurrentlyGrappled" field and flip the 
+        "isGrappling" bool when the player does a valid grapple. 
+    </p>
+    <picture>
+    <img src="uml.png">
+    </picture>
+    <p>This diagram shows the control flow of the three most important functions in the player for grappling.</p>
+    <img src="player_flow.png" style="width:600px">
+
+    <h2>Version Control</h2>
+    <p>For this project we used Perforce. None of us had ever used Perforce before, so it was a learning experience for all.</p>
+    <p>Which was of course, very stressful.</p>
+    <p>In the beginning, I lost a couple files while using Perforce and had to redo them. A lot of issues came from 
+        files either not being added or not beign pulled. A group member would say "oh, X isn't working" and 99% of the 
+        time it was because they hadn't pulled. Very frustrating. I do think that Perforce was better than git for this 
+        type of project because the checking out files protected against major errors once we knew how to use it.
+    </p>
+
+    <h2>Lessons</h2>
+    <p>From this project I have learned a couple lessons.</p>
+    <ol>
+        <li>Don't randomly apply settings without knowing what they do and if you'll need them. If I had payed closer 
+            attention to the settings I was using with the Cable compoennt, I wouls have more easily been able to track
+            down which one was causing the bug.
+        </li>
+        <li>Make sure everyone is on the same page with how to use version control. In the beginning of learning how to 
+            use Perforce, we were all still learning it and I ended up losing a couple files because I wasn't sure what
+            was happening. Back up files until you're sure you won't lose them (I literally just copied my .cpp files into
+            text files until I was comfortable with Perforce).
+        </li>
+        <li>Communication is key. Every group project I do just hammers home this lesson. Any time group members were hard
+            to get a hold of or didn't communicate what they were doing with the version control, bad things happened. 
+            Sometimes it's out of your control but good communication from everyone is very important.
+        </li>
+        <li>Online learning is weird. This project was developed entirely remotely during April-May 2020 as a result of 
+            the Covid-19 outbreak. It was an interesting format and honestly it made regular meetings easier since nobody
+            had to travel anywhere to meet. Still, it was strange, and it was hard to lean over people's shoulders and 
+            look at their code.
+        </li>
+
+
+    </ol>
+
+
+</body>
+</html>
