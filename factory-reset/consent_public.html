@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+        <script src="scripts/consent_scripts.js"></script>
+    </head>
+    <body>
+
+        <a href="index.html"> <img src="./FR_Logo.png" alt="Factory Reset Logo" class="logo" /></a>
+        <h2>Consent Form: Public Playtesting</h2>
+        <hr>
+            <p>
+                Thank you for your interest in testing our game! We are a small team of college students from Worcester 
+                Polytechnic Institute who are working to create an enjoyable game that is widely accessible. To 
+                help us in this study we will ask you to:
+            </p>
+            <ol>
+                <li>Download the game from a Google Drive link.</li>
+                <li>Unzip the downloaded folder and run the .exe file inside to start the game.</li>
+                <li>Play the game for 5-15 minutes or until you decide to stop.</li>
+                <li>Complete the provided survey after you stop. This should take about 10 minutes.</li>
+            </ol>
+            <p>
+                Our game is a first-person puzzle game where you are a robot with magnetic hands and feet who must use them to move and solve puzzles.  
+                The movement in the game may disorient you, so if you feel dizziness or nausea at any point when playing please take a break or stop playing. The game is not expected to present any other significant risks.
+                If you understand and accept the risks that come with testing this game, then feel free to proceed with playtesting!
+            </p>
+
+            <hr>
+
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <label class="container">
+                    <input type="checkbox" id="consentCheck" onclick="consent()" />
+                    <span class="checkmark"></span>
+                    </label>
+                </td>
+                <td><strong>By checking this box</strong> I indicate that I have read and understood the above warnings.</td>
+            </tr>
+        </table>
+
+            <strong><p style="display:none"id="buildLink">&gt<a href="https://drive.google.com/drive/folders/13qi5HiBh7QD3BhCLz-XIFpPstNiffTjC?usp=sharing" target="_blank">Click here to download the game!</a>&lt</p></strong>
+
+            <strong><p style="display:none" id="surveyLink">&gt<a href="http://wpi.qualtrics.com/jfe/form/SV_4UFsVJuogaHFajs" target="_blank" >Click here to take the post-play survey.</a>&lt</p></strong>
+
+
+        <footer>
+            <a href="index.html">Home</a> | <a href="playtest_screening_public.html">Play</a> | <a href="contact.html">Contact</a>
+        </footer>
+    </body>
+
+</html>
