@@ -1,0 +1,154 @@
+:root {
+    --body-bg-color: #ead9b7;
+    --header-bg-color: #49637f;
+    --text-color: black;
+    --header-txt-color: white;
+}
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header-list {
+    margin-top: 0px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--header-txt-color);
+}
+.header-list li {
+    list-style-type : none;
+    padding-left: 5px;
+}
+
+.talent-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25px;
+}
+.talent-list li {
+    list-style-type : none;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    text-align: center;
+    width: 20vw;
+}
+.talent-list p {
+    font-size: 24px;
+}
+
+.footer-list {
+    margin-top: 0px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: var(--text-color);
+}
+.footer-list li {
+    list-style-type : none;
+    padding-right: 5px;
+}
+
+.talent-list h2 {
+    /*color: #89AA90;*/
+    color: var(--text-color);
+    font-size: 48px;
+}
+
+body {
+    margin: 0;
+    padding-top: 200px;
+    background-color: var(--body-bg-color);
+    overflow-x:hidden;
+}
+
+.header-list a {
+    text-decoration: none;
+    color: var(--header-txt-color);
+}
+.header-list a:hover {
+    color: var(--body-bg-color);
+}
+a {
+    text-decoration: none;
+    color: var(--header-bg-color);
+}
+a:hover {
+    color: var(--text-color);
+}
+
+nav {
+    width: 100vw;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    position: fixed;
+    top:0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 36px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+
+.box {
+    color: var(--header-txt-color);
+}
+
+.text-box {
+    width: 80vw;
+}
+iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    padding-top: 10px;
+}
+
+p {
+    font-size: 24px;
+}
+.project li {
+    list-style-type : none;
+    text-align: center;
+    font-size: 24px;
+}
+img {
+    border: 10px ridge var(--header-bg-color);
+}
+.project img {
+    width: 50vw;
+}
+footer img {
+    border:none;
+}
+.icon {
+    border:none;
+    width:20px !important;
+}
