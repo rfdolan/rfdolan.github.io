@@ -49,16 +49,10 @@ header {
 
 .talent-list li {
     list-style-type : none;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    align-items: center;
-    width: 20vw;
-    margin: 1vw;
 }
 
 .talent-list li:hover {
     outline: 5px solid var(--header-bg-color);
-
 }
 
 .talent-list h2 {
@@ -72,6 +66,12 @@ header {
     font-size: 24px;
 }
 
+.talent-list div{
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    align-items: center;
+    width: 20vw;
+}
 .talent-list a{
     text-decoration: none;
     color: var(--text-color);
