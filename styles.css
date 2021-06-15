@@ -1,8 +1,14 @@
 :root {
-    --body-bg-color: #ead9b7;
+    --body-bg-color: #324837;
+    /*
     --header-bg-color: #49637f;
     --text-color: black;
     --header-txt-color: white;
+    */
+    --header-bg-color:#202c1f;
+    --text-color: white;
+    --header-txt-color:white;
+    --accent-color: #f2d140;
 }
 html {
     font-family: 'Roboto Condensed', sans-serif;
@@ -22,19 +28,18 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 36px;
-    color: var(--header-txt-color);
 }
 .header-list li {
     list-style-type : none;
     padding-left: 5px;
 }
 
-.header-list a {
-    text-decoration: none;
-    color: var(--header-txt-color);
+header a{
+    color: var(--header-txt-color)
 }
-.header-list a:hover {
-    color: var(--body-bg-color);
+
+header a:hover{
+    color: var(--accent-color);
 }
 
 /*talent list*/
@@ -52,7 +57,7 @@ header {
 }
 
 .talent-list li:hover {
-    outline: 5px solid var(--header-bg-color);
+    outline: 5px solid var(--accent-color);
 }
 
 .talent-list h2 {
@@ -106,11 +111,11 @@ body {
     background-color: var(--body-bg-color);
     overflow-x:hidden;
 }
-
-a {
+a{
     text-decoration: none;
-    color: var(--header-bg-color);
+    color: var(--accent-color);
 }
+
 a:hover {
     color: var(--text-color);
 }
@@ -124,14 +129,17 @@ h1 {
     font-size: 64px;
     margin-top: 5px;
     margin-bottom: 0px;
+    color: var(--text-color);
 }
 
 h2 {
     font-size: 48px;
+    color: var(--text-color);
 }
 
 h3 {
     font-size: 36px;
+    color: var(--text-color);
 }
 
 .container {
@@ -143,7 +151,7 @@ h3 {
 }
 
 .box {
-    color: var(--header-txt-color);
+    color: var(--accent-color);
 }
 
 .text-box {
@@ -157,9 +165,13 @@ h3 {
 
 p {
     font-size: 24px;
+    color: var(--text-color);
 }
 img {
-    border: 10px ridge var(--header-bg-color);
+    border: 10px ridge var(--accent-color);
+}
+li {
+    color: var(--text-color);
 }
 
 /*project*/
@@ -176,7 +188,31 @@ img {
     height: 37.5vw;
 }
 
+iframe{
+    border: 10px ridge var(--accent-color);
+}
+
+a.project {
+    color: var(--accent-color);
+}
+
+.project h2 a {
+    color: var(--text-color);
+}
+
+.project h2 a:hover {
+    color: var(--accent-color);
+}
+
 .icon {
     border:none;
     width:20px !important;
+}
+
+hr {
+    top: 20px;
+    border: none;
+    height: 6px;
+    background: var(--accent-color);
+    margin-bottom: 50px;;
 }
