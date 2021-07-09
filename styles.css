@@ -163,7 +163,7 @@ h3 {
 }
 
 .text-box {
-    width: 80vw;
+    width: 800px;
 }
 .resume iframe{
     display: flex;
@@ -189,11 +189,11 @@ li {
     font-size: 24px;
 }
 .project img {
-    width: 50vw;
+    width: 750px;
 }
 .project iframe {
-    width: 50vw;
-    height: 37.5vw;
+    width: 750px;
+    height: 422px;
 }
 
 iframe{
