@@ -2,20 +2,308 @@
 <html lang="en">
 
 <head>
-    <title>Hi :)</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+  <title>Locations | Icewind Dale</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
-	<div class="box">
-		<div class="headerdiv">
-			<h1>Icewind Dale</h1>
+	<header>
+		<h1>Icewind Dale</h1>
+		<div class="subheader">
+			<div><a class="active" href="./home.html">Home</a></div>
+			<div><a href="./characters.html">Characters</a></div>
+			<div><a href="./locations.html">Locations</a></div>
 		</div>
-		<header>
-			<a href="./home.html">Home</a>
-			<a href="./characters.html">Characters</a>
-			<a href="./locations.html">Locations</a>
-		</header>
+  </header>
+
+	<div class="list-container">
+		<div class="location-list">
+			<h1>Ten-Towns</h1>
+      <img src="./images/ten-towns-map.jpg" style="width: 60%; height: auto;"/>
+			<button class="accordion"><h2>>> Bremen <<</h2></button>
+			<div class="accordion-content">
+				<div class="town-content">
+					<div>
+						<img class="crest" src="./images/bremen.webp" />
+						<img class="map" src="./images/bremen-map.jpg" />
+					</div>
+					<div class="town-text">
+						<h3>Population</h3><p>150</p>
+						<!--<h3>Speaker</h3><p>Unknown</p>-->
+            <h3>Description</h3>
+						<p>Founded by dwarf prospectors, the sleepy town of Bremen sits on the west bank of 
+							Maer Dualdon, at the mouth of the Shaengarne River. Bremen's harbor has frozen, 
+							requiring local fishers to haul their boats across the ice to put them in the lake. 
+							Visitors who lack a boat can reach Bremen only by crossing the river, which is mostly 
+							frozen over. Targos, Termalaine, and Lonelywood are all visible from the docks on clear days.
+            </p>
+            <p>If Auril's everlasting winter has one benefit, it's that the hardy folk of Bremen are spared the 
+              seasonal floods that normally threaten the town in early summer. That's not to say that the long 
+              nights, frigid air, and howling blizzards provide any comfort. They don't.
+            </p>
+            <!--<p>Twice in the past two months, residents of Bremen have had to mount search parties for their 
+              town speaker and oldest living resident, Dorbulgruf Shalescar, and twice they've found him 
+              wandering the frozen shores of the Shaengarne in heavy furs, with no memory of how he got there. 
+              Dorbulgruf, old even by dwarf standards, isn't long for this world. Many locals fear the same is 
+              true of the town itself, if Auril's brutal winter does not abate.
+            </p>-->
+            <h3>Travel Times</h3>
+            <ul>
+              <li>Targos: 2 Hours</li>
+            </ul>
+					</div>
+				</div>
+			</div>
+
+			<button class="accordion"><h2>>> Bryn Shander <<</h2></button>
+			<div class="accordion-content">
+				<div class="town-content">
+					<div class="town-images">
+						<img class="crest" src="./images/bryn-shander.webp" />
+						<img class="map" src="./images/bryn-shander-map.jpg" />
+					</div>
+					<div class="town-text">
+						<h3>Population</h3><p>1,200</p>
+            <h3>Description</h3>
+            <p>The first stop for most visitors to Icewind Dale is Bryn Shander, a walled town perched atop a cold, lonely, wind-lashed hill. Bright lanterns suspended over narrow streets twist in the wind and add flecks of color to the town's otherwise drab surroundings.</p>
+
+            <p>The friendliness in this settlement has dwindled of late. Auril's unyielding winter has greatly reduced the number of visitors to Bryn Shander, and local trade is suffering for it, eating away at the locals' sense of humor and goodwill. Still, there is no safer place in Icewind Dale to spend coin or spend the night.</p>
+            
+            <p>The walls of the town stand some 30 feet high and are defined by two concentric rings of upright wooden poles, the gap between them filled with dirt and rubble. The outer ring of poles rises above the top of the wall, providing a rampart for defenders stationed on the wood-planked walkway. The wall's hinged gates are 15 feet tall and can be barred from the inside with iron-banded wood beams. These gates are closed when it's dark outside—which is to say more often than not.</p>
+            <h3>Travel Times</h3>
+            <ul>
+              <li>Caer-Dineval: 10.5 Hours</li>
+              <li>Easthaven: 7.5 Hours</li>
+              <li>Good Mead: 6 Hours</li>
+              <li>Targos: 2 Hours</li>
+              <li>Termalaine: 6 Hours</li>
+            </ul>
+					</div>
+				</div>
+      </div>
+
+			<button class="accordion"><h2>>> Caer-Dineval <<</h2></button>
+			<div class="accordion-content">
+				<div class="town-content">
+					<div class="town-images">
+						<img class="crest" src="./images/caer-dineval.png" />
+						<img class="map" src="./images/caer-dineval-map.jpg" />
+					</div>
+					<div class="town-text">
+						<h3>Population</h3><p>100</p>
+            <h3>Description</h3>
+            <p>In generations past, travelers to Caer-Dineval had to follow the rocky shore of Lac Dinneshere until after several hours they spied a small fortress (the "caer" for which the town is named) jutting up from the prominence where it overlooks the lake. A ferry out of Easthaven made the arduous trek unnecessary for merchants and other travelers, but the ferry was discontinued two months ago, cutting off Caer-Dineval (and its eastward neighbor, Caer-Konig) from the rest of Ten-Towns except by the overland route. Town residents are furious that the ferry service has stopped, mainly because they have not received deliveries of mead from the town of Good Mead, and the taverns have run dry.</p>
+
+            <p>As if things weren't bad enough, the town's harbor has frozen over, and the town's speaker, Crannoc Siever, has taken to his bed and is apparently too sick to make public appearances or press the Council of Speakers to get the ferry from Easthaven running again.</p>
+            <h3>Travel Times</h3>
+            <ul>
+              <li>Bryn-Shander: 10.5 Hours</li>
+              <li>Caer-Konig: 2 Hours</li>
+              <li>Easthaven: 9 Hours</li>
+              <li>Good Mead: 8 Hours</li>
+            </ul>
+					</div>
+				</div>
+      </div>
+
+			<button class="accordion"><h2>>> Caer-Konig <<</h2></button>
+			<div class="accordion-content">
+				<div class="town-content">
+					<div class="town-images">
+						<img class="crest" src="./images/caer-konig.png" />
+						<img class="map" src="./images/caer-konig-map.jpg" />
+					</div>
+					<div class="town-text">
+						<h3>Population</h3><p>150</p>
+            <h3>Description</h3>
+
+            <p>The white, snow-covered slopes of Kelvin's Cairn loom large behind this quiet lakeside town. Caer-Konig started as a camp for a group of mountaineers from the northern Moonsea region. As the camp grew, a wooden palisade was added to discourage raiders. Later came the stone castle of Caer-Konig. Alas, neither the palisade nor the castle fared well; both fell to orcs before falling into ruin.</p>
+
+            <p>Caer-Konig as it is known today consists of terraced rows of houses that recede from the shore of Lac Dinneshere like the tiers of an amphitheater. The harbor is frozen, its docks skewed and broken by the shifting ice. Buried under the snow on the slopes above the last row of houses are the ruins of the Caer that gave the town its name—a reminder to the people of Caer-Konig that nothing lasts in this corner of the world.</p>
+
+            <p>Travel to and from this remote town was expedited by the ferry that ran out of Easthaven, but with the ferry shut down, Caer-Konig is completely cut off by mountains, lake, and snow. Forced to live on what they can haul out of the iced-over lake, the people of Caer-Konig are bitter and angry. They believe that the rest of Ten-Towns has abandoned them. The only thing that keeps the townsfolk from leaving is the beer at the local tavern, which never seems to run out.</p>
+
+            <!--<p>As if things weren't bad enough, the town has suffered several mysterious break-ins recently, with no evidence of the intruders except dwarven boot tracks in the snow leading north. Since there are no known settlements in that direction, the townsfolk assume that Auril's everlasting winter has taken its toll on the dwarves of Kelvin's Cairn, forcing them to come down from the mountain in search of food or beer. In truth, the town is beset by invisible duergar searching for chardalyn.</p>
+
+            <p>The town speaker, a heavy-drinking dragonborn named Trovus, patrols at night to keep an eye out for trouble. In his inebriated state, however, Trovus is prone to wandering out onto the icy lake or passing out on the ramshackle docks, and he almost never remembers his nightly patrols once his head clears.</p>-->
+            <h3>Travel Times</h3>
+            <ul>
+              <li>Caer-Dineval: 2 Hours</li>
+            </ul>
+					</div>
+				</div>
+      </div>
+
+			<button class="accordion"><h2>>> Dougan's Hole <<</h2></button>
+			<div class="accordion-content">
+				<div class="town-content">
+					<div class="town-images">
+						<img class="crest" src="./images/dougans-hole.png" />
+						<img class="map" src="./images/dougans-hole-map.jpg" />
+					</div>
+					<div class="town-text">
+						<h3>Population</h3><p>50</p>
+            <h3>Description</h3>
+            <p>Dougan's Hole is the smallest and most insular of the ten towns. Its residents aren't fond of visitors, and inbreeding has caused the population to dwindle in recent years. It also has given rise to often-seen physical deformities, including but not limited to small, misshapen ears and slightly pointed teeth.</p>
+
+            <p>The town is a small cluster of dwellings perched on the edge of Redwaters that is too small to support any industry—not even scrimshaw. Ice has buckled the shorter of its two piers, rendering the dock unsafe. The longer pier has two icebound keelboats tethered to it, though they're immobile because Auril's winter has frozen the surface of the lake for hundreds of yards around them. Local fishers have hauled their smaller boats onto the shore and resorted to cutting holes in the ice to catch knucklehead trout, which they depend on for survival. Visitors to Dougan's Hole are often struck by the eeriness of dark, humanoid shapes out on the ice, remaining silent and still as the wind howls around them.</p>
+            <h3>Travel Times</h3>
+            <ul>
+              <li>Good Mead: 4 Hours</li>
+            </ul>
+					</div>
+				</div>
+      </div>
+
+			<button class="accordion"><h2>>> Easthaven <<</h2></button>
+			<div class="accordion-content">
+				<div class="town-content">
+					<div class="town-images">
+						<img class="crest" src="./images/easthaven.png" />
+						<img class="map" src="./images/easthaven-map.jpg" />
+					</div>
+					<div class="town-text">
+						<h3>Population</h3><p>750</p>
+            <h3>Description</h3>
+            <p>Walking into Easthaven is like stepping into Icewind Dale's past—the place is a living example of the boomtown way of life that gripped all of Ten-Towns centuries ago. In the generations since, as other towns have settled into a predictable pattern of existence, Easthaven has continued to grow and reinvent itself. After the Eastway was paved, Easthaven evolved into a frontier traders' paradise, fueling the jealousy of its neighbors.</p>
+
+            <p>Easthaven's founders were thieves from the Duchy of Cape Velen, on a peninsula far to the south. They refused to kowtow to a powerful thieves' guild and were driven out. To this day, Easthaven honors its shady founders by declaring pickpocketing legal within the town limits—which explains the "Watch thy pouch!" signs posted in various local establishments.</p>
+
+            <!--<p>Duergar have infiltrated the town of late, scouring Easthaven and the surrounding tundra for chardalyn fragments to bring back to their hidden mountain stronghold. The leader of these duergar is Durth Sunblight, the oldest living son of Xardorok Sunblight. Durth and his gang have turned the frozen Easthaven ferry into a temporary base. Using their innate invisibility to move about unseen, the duergar betray their presence only by the footprints they leave in the snow.</p>
+
+            <p>Another occurrence of note is the recent capture of a Red Wizard of Thay who has been found guilty of killing a handful of dale-folk he had hired for an expedition. Speaker Danneth Waylen has issued a decree that the wizard be tied to a stake and burned alive—an event that a lot of Easthaven residents are looking forward to.</p>-->
+            <h3>Travel Times</h3>
+            <ul>
+              <li>Bryn Shander: 7.5 Hours</li>
+              <li>Caer-Dineval: 9 Hours</li>
+              <li>Good Mead: 4.5 Hours</li>
+            </ul>
+					</div>
+				</div>
+      </div>
+
+			<button class="accordion"><h2>>> Good Mead<<</h2></button>
+			<div class="accordion-content">
+				<div class="town-content">
+					<div class="town-images">
+						<img class="crest" src="./images/good-mead.webp" />
+						<img class="map" src="./images/good-mead-map.jpg" />
+					</div>
+					<div class="town-text">
+						<h3>Population</h3><p>100</p>
+            <h3>Description</h3>
+            <p>Founded by immigrants from Chult and the Vilhon Reach, Good Mead is nestled between Redwaters and a nearby evergreen forest. The town's squat dwellings, adorned with carvings of dinosaurs and serpents, are overshadowed by the two-story structure of the mead hall, its eaves carved and painted to resemble wyverns. As honey is the key ingredient in mead, the town literally buzzes with the droning of bees.</p>
+
+            <p>Every tavern in Icewind Dale is accustomed to receiving regular mead deliveries, and the town can't produce or deliver its mead fast enough. All deliveries have halted temporarily, though... <!--because a verbeeg marauder emerged from the forest three days ago and stole three casks of mead that were being loaded onto a dogsled for transport to Bryn Shander. Kendrick Rielsbarrow, the town speaker and a giant of a man in his own right, stood his ground against the verbeeg and didn't fare well. After skewering Kendrick with its spear, the verbeeg grabbed the casks and disappeared whence he came. The other residents of Good Mead tried to save Kendrick, to no avail; his body lies in a local shrine. Five members of the militia went after the verbeeg but haven't returned.--></p>
+            <h3>Travel Times</h3>
+            <ul>
+              <li>Bryn Shander: 6 Hours</li>
+              <li>Caer-Dineval: 8 Hours</li>
+              <li>Dougan's Hole: 4 Hours</li>
+              <li>Easthaven: 4.5 Hours</li>
+            </ul>
+					</div>
+				</div>
+      </div>
+
+			<button class="accordion"><h2>>> Lonelywood <<</h2></button>
+			<div class="accordion-content">
+				<div class="town-content">
+					<div class="town-images">
+						<img class="crest" src="./images/lonelywood.png" />
+						<img class="map" src="./images/lonelywood-map.jpg" />
+					</div>
+					<div class="town-text">
+						<h3>Population</h3><p>100</p>
+            <h3>Description</h3>
+            <p>Founded by a Sembian family from Urmlaspyr, Lonelywood is a quiet town of loggers, fishers, and scrimshanders scratching out a living on the edge of the world. The town's oldest buildings and docks bear carvings of dragons, lions, and goats that pay deference to the family's crest, which featured a chimera.</p>
+
+            <p>Roughly half of Lonelywood's able-bodied residents trawl the lake for knucklehead trout, while most of the others spend their days in the forest felling and hewing the trees that are used to construct boats and buildings. Lonelywood's timber is taken by cart to be sold in other settlements, Termalaine and Targos in particular.</p>
+
+            <p>For as long as Ten-Towns has existed, Lonelywood has attracted the region's shadiest element, from unrepentant thieves to cold-hearted killers. The thick forest looming behind it conceals the dark and sordid dealings that sometimes transpire there. Despite its attraction to criminals and miscreants, Lonelywood is not a place where folk murder each other in the streets. The realities of survival demand that the residents live and work together, and not dwell on history. A visitor can make many friends here but would be wise not to drudge up the dark deeds of anyone's past in this small town.</p>
+            <h3>Travel Times</h3>
+            <ul>
+              <li>Termalaine: 2 Hours</li>
+            </ul>
+					</div>
+				</div>
+      </div>
+
+			<button class="accordion"><h2>>> Targos <<</h2></button>
+			<div class="accordion-content">
+				<div class="town-content">
+					<div class="town-images">
+						<img class="crest" src="./images/targos.png" />
+						<img class="map" src="./images/targos-map.jpg" />
+					</div>
+					<div class="town-text">
+						<h3>Population</h3><p>1,000</p>
+            <h3>Description</h3>
+            <p>Like Bryn Shander, Targos is encircled by a wooden wall, which helps to protect the town against orcs and other threats from the wilderness. The wall extends out into the lake, creating a safe harbor for the town's boats. But now Auril's long winter has frozen the water in the harbor, and many of Targos's boats are trapped in the ice. Fishers must drag their smaller vessels across the ice to get to the unfrozen lake beyond the harbor walls.</p>
+
+            <p>Almost all the towns in Icewind Dale make their living off the lakes, but nowhere is that fact more evident than in Targos. The town has always had the biggest fishing fleet and the biggest fishing industry, and everything that goes on here revolves around hauling the knucklehead trout out of Maer Dualdon. Auril's endless winter makes the work harder, but it gets done nonetheless.</p>
+            
+            <!--<p>Naerth Maxildanarr, a former rogue of Luskan, moved to Targos a couple of years ago, took up residence in the Luskan Arms, and spread around a lot of gold, earning the loyalty of many local fishers. His cordial, down-to-earth demeanor contributed to his swift rise to power, enabling him to replace a town speaker who was well liked but didn't want the job anymore. As the most senior representative of the Zhentarim in Ten-Towns, Naerth is determined to turn Icewind Dale into a trade hub for the Black Network. He has a dozen or more Zhentarim spies throughout Ten-Towns that he uses to good effect, disposing of suspected Harper spies and convincing business owners to buy fish from Targos instead of from other sources.</p>-->
+            <h3>Travel Times</h3>
+            <ul>
+              <li>Bremen (no trail): 3 Hours</li>
+              <li>Bryn Shander: 2 Hours</li>
+              <li>Termalaine: 4 Hours</li>
+            </ul>
+					</div>
+				</div>
+      </div>
+
+			<button class="accordion"><h2>>> Termalaine <<</h2></button>
+			<div class="accordion-content">
+				<div class="town-content">
+					<div class="town-images">
+						<img class="crest" src="./images/termalaine.png" />
+						<img class="map" src="./images/termalaine-map.jpg" />
+					</div>
+					<div class="town-text">
+						<h3>Population</h3><p>1,000</p>
+            <h3>Description</h3>
+            <p>Founded by Calishite settlers who appreciated beauty, Termalaine is widely regarded as the most picturesque town in Icewind Dale, spreading out from the shore of Maer Dualdon and bordered on the north and west by tall pines. Its buildings incorporate carvings of wizards, homunculi, tigers, and smiling djinn.</p>
+
+            <p>For most visitors, the enchantment of the town is dispelled as soon as they feel the icy claws and teeth of the cold wind sweeping down from the north, shearing through their layers of clothing. Termalaine was built in the path of this dreadful gale, which continues well past the town to harry fishers on the southern half of the lake.</p>
+
+            <p>In addition to fishers, shipbuilders, and scrimshanders, Termalaine is home to miners who harvest gemstones from a cavern complex set into a low hill north and east of the settlement. Their efforts are hampered by creatures from the Underdark that occasionally find their way up into the mine. Whenever such creatures are discovered, the mine is sealed off and the townsfolk wait until a band of sellswords or adventurers can be hired to clear it out.</p>
+            <h3>Travel Times</h3>
+            <ul>
+              <li>Lonelywood: 2 Hours</li>
+              <li>Targos: 4 Hours</li>
+            </ul>
+					</div>
+				</div>
+      </div>
+			</div>
 	</div>
+
+	<script>
+		var accordions = document.getElementsByClassName("accordion");
+
+		for (var i = 0; i < accordions.length; i++) {
+			accordions[i].onclick = function() {
+				this.classList.toggle('is-open');
+        var text = this.firstChild;
+        var rawtext = text.textContent.slice(2, -2);
+
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+          // accordion is currently open, so close it
+          content.style.maxHeight = null;
+          text.textContent = ">>" + rawtext + "<<";
+				} else {
+          // accordion is currently closed, so open it
+          content.style.maxHeight = content.scrollHeight + "px";
+          text.textContent = "vv" + rawtext + "vv";
+				}
+			}
+		}
+	</script>
 </body>
 </html>

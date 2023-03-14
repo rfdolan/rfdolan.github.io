@@ -8,7 +8,10 @@
     --text-color:#1b121e;
     /*--text-color: white;*/
     --header-txt-color:white;
-    --accent-color: #d1c293;
+    --accent-color: #a89b72;
+}
+* {
+	font-family: "Cabin", sans-serif;
 }
 .box {
 	display: flex;
@@ -25,11 +28,14 @@
 body {
 	background-color: var(--body-bg-color);
 }
-a{
+header a{
     text-decoration: none;
     color: var(--text-color);
 }
-h1 {
+header a:hover{
+	color: var(--accent-color);
+}
+header h1 {
 	color: var(--text-color);
 	font-size: 64px;
 	text-align: center;
@@ -42,6 +48,93 @@ header {
 	font-size: 48px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-
+	justify-content: space-evenly;
 }
+.subheader div {
+	width: calc(100%/3);
+	text-align: center;
+}
+h1 {
+	font-size: 60px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 24px;
+}
+p {
+	font-size: 18px;
+}
+.list-container {
+	display:flex;
+	justify-content: center;
+}
+.location-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 2000px;
+	width: 80%;
+}
+button.accordion {
+	width: fit-content;
+	border: none;
+	background: none;
+	border: none;
+	text-align: center;
+	font-size: 24px;
+	cursor: pointer;
+	transition: background-color 0.2s linear;
+  }
+  
+  button.accordion:after {
+	font-family: "fontawesome";
+	font-size: 14px;
+	float: right;
+  }
+
+  button.accordion:hover {
+	color: var(--accent-color);
+  }
+  
+  button.accordion.is-open:after {
+  }
+  
+  button.accordion:hover, button.accordion.is-open {
+  }
+  
+  .accordion-content {
+	border-left: 4px solid black;
+	border-right: 4px solid black;
+	padding: 0 20px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-in-out;
+	text-align: center;
+	width: 60%;
+  }
+  .town-content {
+	display: flex;
+	flex-direction: row;
+  }
+  .town-content div {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+  }
+  .crest {
+	max-width: 30%;
+	width: auto;
+	align-self: center;
+  }
+  .map {
+	align-self: center;
+	max-width: 100%;
+	height: auto;
+  }
+  .town-text {
+	text-align: left;
+	padding-left: 20px;
+	font-size: 18px;
+  }
