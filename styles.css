@@ -1,14 +1,14 @@
 :root {
-    --body-bg-color: #324837;
+    --body-bg-color: #141414;
     /*
     --header-bg-color: #49637f;
     --text-color: black;
     --header-txt-color: white;
     */
-    --header-bg-color:#202c1f;
+    --header-bg-color:#3f3f3f;
     --text-color: white;
     --header-txt-color:white;
-    --accent-color: #f2d140;
+    --accent-color: #edd255;
 }
 html {
     font-family: 'Roboto Condensed', sans-serif;
