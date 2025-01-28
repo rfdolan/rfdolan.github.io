@@ -156,6 +156,10 @@ hr {
   margin-right: -20vw;
 }
 
+iframe {
+  border: 10px ridge var(--accent-color);
+}
+
 
 .text-box {
   width: 1800px;
@@ -213,16 +217,17 @@ li {
 
 .talent-list h2 {
   /*color: #89AA90;*/
+  font-size: min(max(28px, 2.5vw), 48px) !important;
   color: var(--text-color);
   font-size: 48px;
   overflow-x: wrap;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .talent-list p {
-  font-size: 24px;
+  font-size: min(max(12px, 0.9vw), 18px) !important;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -246,10 +251,6 @@ li {
 .project iframe {
   width: 750px;
   height: 422px;
-}
-
-iframe {
-  border: 10px ridge var(--accent-color);
 }
 
 a.project {
