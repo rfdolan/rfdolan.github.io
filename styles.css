@@ -330,3 +330,44 @@ a.project {
   border-left: 5px ridge var(--accent-color);
   font-size: 14px;
 }
+
+
+div.spoiler {
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+img.spoilered-img {
+  border: 10px ridge var(--accent-color);
+  filter: blur(20px) grayscale(100%);
+  transition: 0.3s;
+  transform: scale(1.03);
+}
+
+div.nospoiler img {
+  filter: none;
+}
+
+.spoiler-button {
+	position: relative;
+	top: -550px;
+	bottom: 0;
+	left: 40px;
+	right: 0;
+	height: 30px !important;
+  width: 30px !important;
+	cursor: pointer;
+  border:none !important;
+  background: transparent;
+  z-index: 1;
+}
+
+.spoiler-button img {
+  border: none;
+  height: 30px !important;
+  width: 30px !important;
+  filter:invert();
+  background-color: white;
+  border: 5px solid black;
+}

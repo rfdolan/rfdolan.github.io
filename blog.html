@@ -6,6 +6,19 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <script>
+    function unspoiler(spoiler) {
+      if(spoiler.parentNode.classList.contains('nospoiler')) {
+        spoiler.parentNode.classList.remove('nospoiler');
+        spoiler.parentNode.classList.add('spoiler');
+      } else {
+        spoiler.parentNode.classList.remove('spoiler');
+        spoiler.parentNode.classList.add('nospoiler');
+
+      }
+      
+    }
+  </script>
 </head>
 
 <body>
@@ -183,7 +196,29 @@
         </div>
       <h3>Bike Repairs</h3>
       <p>
-        I crashed my bike back in December. The worst part of the whole thing was that I broke two parts on the bike:
+        I crashed my bike back in December. My injuries weren't too bad, see the spoilered images below if you're curious.
+      </p>
+      <div class="horizontal-list">
+          <ul>
+            <li>
+              <div class="spoiler">
+                <button class="spoiler-button" onclick="unspoiler(this)"><img src="https://img.icons8.com/?size=100&id=60022&format=png&color=000000"></button>
+                <img style="height: 600px;" class="spoilered-img" src="images/blog/1/bike-arm-injury.jpg" alt="The scrape on my arm." />
+              </div>
+              <p>The scrape on my arm.</p>
+            </li>
+            <li>
+              <div class="spoiler">
+                <button class="spoiler-button" onclick="unspoiler(this)"><img src="https://img.icons8.com/?size=100&id=60022&format=png&color=000000"></button>
+                <img style="height: 600px;" class="spoilered-img" src="images/blog/1/bike-leg-injury.jpg" alt="The scrape on my leg." />
+              </div>
+              <p>The scrape on my shin.</p>
+            </li>
+          </ul>
+        </div>
+        
+        <p>
+        The worst part of the whole thing was that I broke two parts on the bike:
       </p>
       <ul>
         <li>The left pedal</li>
