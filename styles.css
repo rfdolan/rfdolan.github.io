@@ -217,7 +217,7 @@ li {
 
 .talent-list h2 {
   /*color: #89AA90;*/
-  font-size: min(max(28px, 2.5vw), 48px) !important;
+  font-size: min(max(28px, 2.5vw), 36px) !important;
   color: var(--text-color);
   font-size: 48px;
   overflow-x: wrap;
@@ -227,7 +227,7 @@ li {
 }
 
 .talent-list p {
-  font-size: min(max(12px, 0.9vw), 18px) !important;
+  font-size: min(max(13px, 0.9vw), 18px) !important;
   padding-left: 25px;
   padding-right: 25px;
 }
