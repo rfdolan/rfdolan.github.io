@@ -152,8 +152,6 @@ hr {
   height: 5px;
   background: var(--accent-color);
   margin-bottom: 50px;
-  margin-left: -20vw;
-  margin-right: -20vw;
 }
 
 iframe {
