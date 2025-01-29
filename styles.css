@@ -161,7 +161,6 @@ iframe {
 
 .text-box {
   width: 80vw;
-  min-width: 1800px;
 }
 
 .text-box p {
@@ -205,11 +204,11 @@ li {
   list-style-type: none;
 }
 
-.talent-list a {
+.talent-list li {
   border: 5px solid rgba(0, 0, 0, 0);
 }
 
-.talent-list a:hover {
+.talent-list li:hover {
   border-top: 5px solid var(--accent-color);
   border-bottom: 5px solid var(--accent-color);
 }
@@ -309,7 +308,7 @@ a.project {
   width: 500px;
 }
 
-.horizontal-list ul {
+ul.horizontal-list{
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -317,19 +316,41 @@ a.project {
   list-style-type: none;
   padding: 0;
   display: flex;
+  list-style: none;
+}
+
+@media(max-width: 1200px) {
+ul.horizontal-list{
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
 }
 
 .horizontal-list li {
+  width: auto;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
 .horizontal-list li p {
-  width: 500px;
+  max-width: 500px;
+  width: auto;
   padding-left: 10px;
   border-left: 5px ridge var(--accent-color);
   font-size: 14px;
 }
 
+.horizontal-list img {
+  width: auto;
+  max-width: 500px;
+}
 
 div.spoiler {
 	overflow: hidden;
