@@ -160,7 +160,8 @@ iframe {
 
 
 .text-box {
-  width: 1800px;
+  width: 80vw;
+  min-width: 1800px;
 }
 
 .text-box p {
